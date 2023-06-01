@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeroTst</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <py-env>
+    - ./main.py
+  </py-env>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="landingpage.html">ZeroTst</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+  
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3 id="def">
+          
+        </h3>
+      </div>
+      <div class="flip-card-back">
+        <h3 id="term">
+          
+        </h3>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <footer class="container-fluid bg-primary text-center footer">
+    Készítette: ZeroTst Zrt.
+  </footer>
+  <py-config>
+    plugins =["./main.py"]
+  </py-config>
+  
+  
+  
+  <py-script>
+    from main import adat_ani
+    display(main.adat_ani, target="term")
+    display(main.adat_ani2, target="def")
+  </py-script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</body>
+
+</html>
