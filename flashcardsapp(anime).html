@@ -8,8 +8,6 @@
   <title>ZeroTst</title>
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-  
 </head>
 
 <body>
@@ -44,7 +42,7 @@
   <div class="container">
     
     <div class="row">
-    
+      
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -54,16 +52,18 @@
           </div>
           <div class="flip-card-back">
             <h3 id="term">
-    
+              
             </h3>
           </div>
         </div>
       </div>
-    
+      
     </div>
     
   </div>
   
+
+
   
   
   
@@ -75,20 +75,13 @@
   <footer class="container-fluid bg-primary text-center footer">
     Készítette: ZeroTst Zrt.
   </footer>
-  <py-config>
-    plugins =["./main.py"]
-  </py-config>
   
   
   
-  <py-script>
-    from main import adat_ani
-    display(main.adat_ani, target="term")
-    display(main.adat_ani2, target="def")
-  </py-script>
+  
   <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
