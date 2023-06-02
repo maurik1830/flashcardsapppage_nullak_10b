@@ -5,6 +5,9 @@
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   
   /* This container is needed to position the front and back side */
@@ -43,3 +46,13 @@
     transform: rotateY(180deg);
   }
   
+footer{
+  margin-top: auto;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
