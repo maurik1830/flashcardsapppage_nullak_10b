@@ -16,9 +16,30 @@ const anime = {
 }
 it_security =  {
     Backdoor: " Olyan program, ami illetéktelen személyek számára teszi lehetővé a géphez való hozzáférést."
+
 }
+metal = {
+
+}
+
+
+
 
 const anime_arr = ["Kodomo", "Sónen", "Szeinen", "Sódzsó", "Dzsoszei", "Ecchi", "Hentai", "Shónen-ai", "Jaoi", "Sódzsó-ai", "Juri"]
 
 
-document.getElementById("term").innerHTML = 
+
+
+var ani_len = anime_arr.length
+var randsz = Math.floor(Math.random() * anime_arr.length)
+
+
+
+
+
+
+
+document.getElementById("term").innerHTML = anime_arr[randsz]
+document.getElementById("def").innerHTML = anime[anime_arr[randsz]]
+
+

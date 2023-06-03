@@ -7,9 +7,86 @@
     <title>ZeroTst</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="./css,js/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="landingpage.html">ZeroTst</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      </nav>
+
+
+
+      <main class="container">
+        <div id="cards" class="row">
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./images/anime.jfif" class="card-img-top" alt="Anime" title="Anime (Mysterious Girlfriend X)">
+                <div class="card-body">
+                  <h5 class="card-title">Anime</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="text-center">
+                    <a href="./flashcardsapp(anime).html" class="btn btn-primary text-center">Start quiz!</a>
+                </div>
+                </div>
+              </div>  
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./images/itsec.avif" class="card-img-top" alt="It Security" title="It Security">
+                <div class="card-body">
+                  <h5 class="card-title">It Security</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="text-center">
+                    <a href="./flashcardsapp(it_security).html" class="btn btn-primary text-center">Start quiz!</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./images/metal.jpg" class="card-img-top" alt="Metal Music" title="Metal Music">
+                <div class="card-body">
+                  <h5 class="card-title">Metal</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                  <div class="text-center">
+                    <a href="./flashcardsapp(metal_music).html" onclick="metal()" class="btn btn-primary text-center">Start quiz!</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      </main>
+
+
+    <footer class="container-fluid bg-primary text-center footer">
+        Készítette: ZeroTst Zrt.
+      </footer>
+      <script src="./tasks.js"></script>
 </body>
 </html>
