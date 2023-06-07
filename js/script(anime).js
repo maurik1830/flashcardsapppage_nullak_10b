@@ -1,3 +1,47 @@
+/**
+ * 
+function check() {
+    var ans = document.getElementById("ans").value;
+    for (let x of anime_arr){
+        switch (x === ans) {
+            case true:
+                document.getElementById("flip-card-inner_1").classList.add("flip-card-inner_2");
+                alert("Correct!")
+                break;
+                case false:
+                    console.log("-------");
+                    
+                break;
+
+            default:
+                break;
+            }
+            
+            
+            
+        }
+    };
+    
+    */
+
+    function validateForm() {
+        let ans = document.forms["myForm"]["fname"].value;
+        let i = 0;
+        while (anime_arr[i] != ans){
+            i++;
+        }
+        if (ans == "") {
+          alert("Name must be filled out");
+          return false;
+        }else if (ans === anime_arr[i]){
+            alert("Correct!");
+            return true;
+        }else if (ans != anime_arr[i]) {
+            alert("Incorrect")
+            return false;
+        }
+      }
+
 
 
 const anime = {
