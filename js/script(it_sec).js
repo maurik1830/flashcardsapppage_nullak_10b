@@ -1,3 +1,29 @@
+
+
+function check(it_sec_arr) {
+    let ans = document.forms["myForm"]["fname"].value;
+    console.log(ans);
+    let i = 0;
+    while (it_sec_arr[i] !== ans){
+        i++;
+    };
+    console.log(anime_arr[i]);
+   switch (ans) {
+       case ans === "":
+           alert("Name must be filled out");
+                break;
+        case it_sec_arr[i] === ans:
+            // document.getElementById("flip-card-inner_1").classList.add("flip-card-inner_2");
+            alert("Correct!");
+                break;
+        case ans !== it_sec_arr[i]:
+            
+            break;
+    };
+    
+  };
+
+
 const it_sec ={
     Backdoor: "Olyan számítógépes program ami összeköti a támadót a támadottal.",
     Phishing: "Az adathalászat angol megfelelője.",
