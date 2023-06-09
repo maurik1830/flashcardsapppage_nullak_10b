@@ -76,7 +76,10 @@ h5{
   margin-top: 25px;
 }
 
-
+.vl{
+  border-left: 6px solid white;
+  height: 50px;
+}
 
 
 
