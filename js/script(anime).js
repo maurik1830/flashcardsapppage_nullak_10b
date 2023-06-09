@@ -8,18 +8,15 @@
             i++;
         };
         console.log(anime_arr[i]);
-       switch (ans) {
-           case ans === "":
-               alert("Name must be filled out");
-                    break;
-            case anime_arr[i] === ans:
-                // document.getElementById("flip-card-inner_1").classList.add("flip-card-inner_2");
-                alert("Correct!");
-                    break;
-            case ans !== anime_arr[i]:
-                alert("Incorrect");
-                break;
+        if (ans === anime_arr[i]) {
+            alert("Correct");
         };
+        if (ans !== anime_arr[i]) {
+            alert("Incorrect");
+        };
+        if (ans === "") {
+            alert("Name must be filled out.");
+        }
         
       };
 const anime = {
